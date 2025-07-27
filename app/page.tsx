@@ -40,47 +40,47 @@ export default function POSPage() {
         />
 
         <main className="flex-1 flex flex-col h-screen overflow-hidden">
-          {/* Header */}
-          <div className="sticky top-0 z-20 bg-gradient-to-r from-orange-600 via-red-600 to-orange-700 shadow-2xl border-b-4 border-yellow-400">
-            <div className="p-6">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-4">
-                  <div className="bg-white/20 backdrop-blur-sm rounded-full p-3">
-                    <div className="w-12 h-12 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full flex items-center justify-center">
-                      <span className="text-white font-bold text-xl">🍔</span>
-                    </div>
-                  </div>
-                  <div>
-                    <h1 className="text-4xl font-black text-white drop-shadow-lg">THE CONTAINER</h1>
-                    <h2 className="text-2xl font-bold text-yellow-300 drop-shadow-md">BURGER</h2>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-3">
-                  {/* Order Status Button */}
-                  <Button
-                    variant="outline"
-                    size="icon"
-                    className="bg-white/20 border-white/30 text-white hover:bg-white/30 backdrop-blur-sm"
-                    onClick={() => router.push("/order-status")}
-                    title="Consultar Estado del Pedido"
-                  >
-                    <Search className="h-5 w-5" />
-                  </Button>
-
-                  {/* Admin Button */}
-                  <Button
-                    variant="outline"
-                    size="icon"
-                    className="bg-white/20 border-white/30 text-white hover:bg-white/30 backdrop-blur-sm"
-                    onClick={() => router.push("/admin")}
-                  >
-                    <Settings className="h-5 w-5" />
-                  </Button>
-                </div>
-              </div>
+  {/* Header */}
+  <div className="sticky top-0 z-20 bg-[url('/fondo-header.png')] bg-cover bg-center shadow-2xl border-b-4 border-yellow-400">
+    <div className="p-6 bg-black/30 backdrop-blur-sm">
+      <div className="flex items-center justify-between">
+        <div className="flex items-center gap-4">
+          <div className="bg-white/20 backdrop-blur-sm rounded-full p-3">
+            <div className="w-12 h-12 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full flex items-center justify-center">
+              <span className="text-white font-bold text-xl">🍔</span>
             </div>
           </div>
+          <div>
+            <h1 className="text-4xl font-black text-white drop-shadow-lg">THE CONTAINER</h1>
+            <h2 className="text-2xl font-bold text-yellow-300 drop-shadow-md">BURGER</h2>
+          </div>
+        </div>
+
+        <div className="flex items-center gap-3">
+          {/* Order Status Button */}
+          <Button
+            variant="outline"
+            size="icon"
+            className="bg-white/20 border-white/30 text-white hover:bg-white/30 backdrop-blur-sm"
+            onClick={() => router.push("/order-status")}
+            title="Consultar Estado del Pedido"
+          >
+            <Search className="h-5 w-5" />
+          </Button>
+
+          {/* Admin Button */}
+          <Button
+            variant="outline"
+            size="icon"
+            className="bg-white/20 border-white/30 text-white hover:bg-white/30 backdrop-blur-sm"
+            onClick={() => router.push("/admin")}
+          >
+            <Settings className="h-5 w-5" />
+          </Button>
+        </div>
+      </div>
+    </div>
+  </div>
 
           {/* Promociones Section */}
           <div className="bg-gradient-to-r from-yellow-400 to-orange-500 p-4 border-b-2 border-orange-600">
