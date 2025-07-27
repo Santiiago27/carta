@@ -41,8 +41,10 @@ export default function POSPage() {
 
         <main className="flex-1 flex flex-col h-screen overflow-hidden">
           {/* Header */}
-          <div className="sticky top-0 z-20 bg-gradient-to-r from-orange-600 via-red-600 to-orange-700 shadow-2xl border-b-4 border-yellow-400">
-            <div className="p-6">
+          <div  className="sticky top-0 z-20 bg-[url('/fondo-header.png')] bg-cover bg-center shadow-2xl border-b-4 border-yellow-400">
+            <div className="absolute inset-0 bg-black/30 backdrop-blur-sm"></div>
+              git push -u origin main
+              <div className="p-6 relative z-10">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-4">
                   <div className="bg-white/20 backdrop-blur-sm rounded-full p-3">
