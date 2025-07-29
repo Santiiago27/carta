@@ -41,7 +41,7 @@ export default function POSPage() {
 
         <main className="flex-1 flex flex-col h-screen overflow-hidden">
   {/* Header */}
-  <div className="sticky top-0 z-20 bg-[url('/fondo-header.png')] bg-cover bg-center shadow-2xl border-b-4 border-yellow-400">
+  <div className="sticky top-0 z-20 bg-[url('/fondo-header.png')] bg-cover bg-center ">
     <div className="p-6 bg-black/30 backdrop-blur-sm">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-4">
@@ -79,12 +79,10 @@ export default function POSPage() {
           </Button>
         </div>
       </div>
-    </div>
-  </div>
-
-          {/* Promociones Section */}
-          <div className="bg-gradient-to-r from-yellow-400 to-orange-500 p-4 border-b-2 border-orange-600">
+       {/* Promociones Section */}
+          
             <div className="flex items-center justify-center gap-4 flex-wrap">
+             
               <Button
                 className="bg-red-600 hover:bg-red-700 text-white font-bold px-6 py-3 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200"
                 onClick={() => setShowPromotions(true)}
@@ -107,8 +105,12 @@ export default function POSPage() {
                 <Calendar className="mr-2 h-5 w-5" />
                 RESERVAR MESA
               </Button>
-            </div>
+            
           </div>
+    </div>
+  </div>
+
+         
 
           {/* Products Area */}
           <div className="flex-1 overflow-auto p-6">

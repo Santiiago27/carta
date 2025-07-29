@@ -44,11 +44,6 @@ const categories: CategoryItem[] = [
     icon: LayoutGrid,
   },
   {
-    id: "promotion",
-    name: "Promociones",
-    icon: Gift,
-  },
-  {
     id: "food",
     name: "Comida",
     icon: Utensils,
@@ -76,7 +71,7 @@ export default function CategorySidebar({
   onSelectCategory,
 }: CategorySidebarProps) {
   return (
-    <div className="w-64 border-r bg-gray-900/95 backdrop-blur-sm p-4 overflow-y-auto border-gray-700">
+    <div className="w-60 border-r bg-[url('/logo-burger.jpg')] backdrop-blur-sm p-4 overflow-y-auto border-gray-700">
       <h2 className="mb-4 text-lg font-semibold text-white">Categorías</h2>
       <div className="space-y-2">
         {categories.map((category) => {
